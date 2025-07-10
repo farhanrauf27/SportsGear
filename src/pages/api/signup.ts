@@ -3,7 +3,7 @@ import bcrypt from 'bcryptjs';
 
 const connectDB = async () => {
   if (mongoose.connections[0].readyState) return;
-  await mongoose.connect("mongodb+srv://rehanramzan2001:MYBfCThvfpgyFv6N@cluster0.m76aob3.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0");
+  await mongoose.connect("");
 };
 
 const UserSchema = new mongoose.Schema({
